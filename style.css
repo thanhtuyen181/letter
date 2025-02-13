@@ -1,0 +1,68 @@
+body {
+    background-color: #fcd6d9;
+}
+
+#envelope {
+    width: 290px;
+    height: 200px;
+
+    position: relative;
+    margin: 150px auto 0 auto;
+    top: 150px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #f9c5c8;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.front {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 3;
+}
+
+.flap {
+    border-left: 150px solid transparent;
+    border-right: 141px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-top: 110px solid rgb(250, 75, 75);
+
+    transform-origin: top;
+    pointer-events: none;
+}
+
+.pocket {
+    border-left: 150px solid #ffacb2;
+    border-right: 142px solid #ffacb2;
+    border-bottom: 90px solid #ff9299;
+    border-top: 110px solid transparent;
+
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 190px; /* Add spacing between envelope and buttons */
+}
+
+.reset button {
+    background-color: #fb9d9d;
+    color: white;
+    border-style: solid;
+    border-color: rgb(255, 241, 241);
+    border-width: 1px;
+    padding: 10px 30px 13px 30px; /* Add space in the button*/
+    font-size: 19px;
+    font-weight: 760;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px 15px 0 15px; /* Add spacing between buttons */
+}
+
+.reset button:hover {
+    background-color: #f98080;
+    color: #9f2929
+}
